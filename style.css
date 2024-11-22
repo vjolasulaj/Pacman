@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P';
+    margin: auto;
+    background-color: rgb(5, 0, 48);
+}
+
+.grid {
+    margin-top: 30px;
+    display: grid;
+    max-width: fit-content;
+    grid-template-columns: repeat(53, 1fr);
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: white;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50%;
+}
+
+.wall {
+    background-color: rgb(32, 43, 197);
+}
+
+.power-pellet {
+    background-color: rgb(162, 2, 194);
+    border-radius: 10px;
+}
+
+.ghost1 {
+    background-color: red;
+    width: 20px !important;
+    height: 20px !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 82% 78%, 65% 100%, 49% 79%, 32% 100%, 16% 77%, 0 100%, 0 0);
+}
+
+.ghost2 {
+    background-color: rgb(134, 10, 31);
+    width: 20px !important;
+    height: 20px !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 82% 78%, 65% 100%, 49% 79%, 32% 100%, 16% 77%, 0 100%, 0 0);
+}
+
+.ghost3 {
+    background-color: rgb(4, 114, 4);
+    width: 20px !important;
+    height: 20px !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 82% 78%, 65% 100%, 49% 79%, 32% 100%, 16% 77%, 0 100%, 0 0);
+}
+
+.ghost4 {
+    background-color: rgb(146, 97, 6);
+    width: 20px !important;
+    height: 20px !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 82% 78%, 65% 100%, 49% 79%, 32% 100%, 16% 77%, 0 100%, 0 0);
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%, 0 100%, 0 0);
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
+
+h3 {
+    color: white;
+    margin-left: 18px;
+}
+
+.direction-right {
+    transform: rotate(270deg);
+}
+
+.direction-left {
+    transform: rotate(90deg)
+}
+
+.direction-up {
+    transform: rotate(180deg)
+}
+
+.direction-down {
+    transform: rotate(0deg)
+}
